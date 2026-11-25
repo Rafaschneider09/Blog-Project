@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Edit Post</title>
+</head>
+<body>
+  <div class="createPost">
+  <h1 class="postTitle">Edit Your Post</h1>
+  
+  <form action="/save" method="POST">
+      <input name="postTitle"  type="text" value="<%= postToEdit.title %>">
+      </br>
+      <textarea name="postBody"><%= postToEdit.content %></textarea>
+      <input name="postIndex" type="hidden" value="<%= postIndex %>">
+      <button class="buttons" type="submit">Save</button>
+    </div>
+    </form>
+
+</body>
+</html>

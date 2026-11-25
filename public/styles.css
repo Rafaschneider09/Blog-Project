@@ -1,0 +1,79 @@
+.post {
+  border: 1px solid black;
+  padding: 16px;
+  margin: 10px;
+  border-radius: 8px;
+  border-color: rgb(105, 105, 105);
+  background-color: rgb(250, 232, 207);
+ 
+}  
+
+.buttons {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}   
+
+.buttons button {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(238, 229, 229);
+    padding: 0.2rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(238, 229, 229);
+    padding: 0.2rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+body {
+    margin: 10%;
+    background-color: antiquewhite;
+}
+
+.createPost {
+    display: grid;
+    place-items: center;        
+    height: 15vh;              
+}
+
+.postTitle {
+    margin-top: 10vh;
+}
+
+textarea, input {
+    font-family: inherit;
+    background-color:rgba(251, 249, 247, 0.831) ;
+    border-radius: 6px;
+    border-color: rgb(225, 224, 224);
+    width: 100%;
+    margin: 7px;
+    
+}
+
+input {
+    height: 30px;
+    font-size: larger;
+}
+
+textarea {
+    height: 50px;
+    font-size: large;
+}
+
+.titlePost {
+        font-family: inherit;
+        border-radius: 6px;
+        width: 100%;
+  
+}

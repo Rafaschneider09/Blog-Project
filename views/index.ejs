@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rafa's Blog</title>
+</head>
+
+<body>
+    <h1>Rafa's Blog</h1>
+
+ 
+        <% posts.forEach((post, index) => { %>
+    <div class="post">
+        <h2><%= post.title  %></h2>
+        <p><%= post.content %></p>
+    
+    <form action="/delete" method="POST">
+        <div class="buttons">
+        <input name="deleteBtn" type="hidden" value="<%= index %>">
+        <button type="submit">Delete</button>
+    </form>
+    <a name="editBtn" href="/edit?index=<%= index %>">Edit</a>
+    </div>
+</div>
+<% }); %>
+
+
+<div class="createPost">
+    <h1 class="postTitle">Create A New Post</h1> </br>
+        <form action="/submit" method="POST">
+            <input name="postTitle" type="text">
+            <textarea name="postBody" id="pb"></textarea> 
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
